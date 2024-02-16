@@ -60,7 +60,6 @@ cards.forEach((card) => card.addEventListener("click", flipCard));
 
 var timeLeft = 30;
 var elem = document.getElementById("score-el");
-
 var timerId = setInterval(countdown, 1000);
 
 function countdown() {
@@ -71,4 +70,10 @@ function countdown() {
     elem.innerHTML = timeLeft + " seconds remaining";
     timeLeft--;
   }
+}
+
+var statusEl = document.getElementById("status-el");
+
+function doSomething() {
+  statusEl.innerHTML = " GAME OVER!";
 }
