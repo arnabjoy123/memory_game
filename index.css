@@ -78,7 +78,7 @@ h1,h2{
     color:rgba(255,0,0,1);
 }
 
-@media(max-width: 450px){
+@media(max-width: 830px){
 
     .memory-game{
         width: 60%; 
