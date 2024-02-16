@@ -7,17 +7,20 @@ body{
 
 .memory-game{
 
-    
-
     border: 2px solid blue;
     background: pink;
 
+    justify-content: space-between;
+    align-content: space-between; 
+
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Adjust the gap as needed */
-    max-width: 50%; /* Adjust the maximum width as needed */
-    height: 50vh;
     margin: auto;
+
+    width: 40%; 
+    height:70%;
+
+    /* gap: 10px; */
 
     border-radius: 15px;
     perspective: 1000px;
@@ -26,14 +29,14 @@ body{
 .memory-card{
 
 
-    height: 17%;
-    width: 27%;
+    width: calc(31% - 20px);
+    height: calc(23% - 20px);
+
+    margin: 10px;
+
     border: 2px solid green;
     border-radius: 15px;
     background: palevioletred;
-    margin: 10px;
-
-    display: flex;
 
 
     position: relative;
@@ -75,12 +78,12 @@ h1,h2{
     color:rgba(255,0,0,1);
 }
 
-
 @media(max-width: 450px){
 
-    .memory-card{
-        height: 10%;
-        width: 17%;
+    .memory-game{
+        width: 60%; 
+        height:50%;
     }
 
 }
+
